@@ -1654,7 +1654,7 @@ unvoiced = expr:(c / f / k / p / s / t / x) {return _node("unvoiced", expr);}
 
 l = expr:(comma* [lL] !h !glide !l) {return _node("l", expr);}
 
-m = expr:(comma* [mM] !h !glide !m !z) {return _node("m", expr);}
+m = expr:(comma* [mM] !h !glide !m !z !s) {return _node("m", expr);}
 
 n = expr:(comma* [nN] !h !glide !n !affricate) {return _node("n", expr);}
 
